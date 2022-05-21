@@ -1555,7 +1555,1841 @@ main{
         justify-content: left;
         margin-bottom: 0px;
         padding-bottom: 0px;
+    }/* updock font family link for extra style */
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+/* Caveat font family for title */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Updock&display=swap');
+
+/* Merriweather font family for main heading */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:wght@700&family=Updock&display=swap');
+
+/* Inter font family for sub title */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300&family=Merriweather:wght@700&family=Updock&display=swap');
+
+/* Nunito font for normal text */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300&family=Merriweather:wght@700&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
+
+/* code for main tag */
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #2c3e50; 
+}
+
+/* code for container div */
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #2c3e50;
+    display: flex;
+}
+
+/* code for left side div */
+.burgerListBigScreen{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    background-color: #05223d;
+    margin: 1px 5px 0px 0px;
+    padding-top: 7vh;
+}
+
+.burgerListBigScreen:hover{
+    border-right: 4px solid white;
+}
+
+.listfooterOnbs{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #05223d;
+}
+
+.listfooterOnbs li{
+    margin: 20px auto;
+    background-color: #05223d;
+}
+
+.listfooterOnbs li a{
+    background-color: #05223d;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder; 
+    font-family: 'Inter', Courier; 
+    padding: 3px 6px;
+}
+
+.listfooterOnbs li:hover{
+    transform: scale(1.1);
+}
+
+.pIconOnbs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #05223d;
+    width: 15vw; 
+    height: 170px; 
+}
+
+#profileList{
+    border-bottom: 1px solid white; 
+}
+
+.pIconOnbs span{
+    color: white;
+    padding-bottom: 20px;
+    background-color: #05223d;
+    transform: scale(2.5);
+    cursor: pointer;
+}
+
+.profileOnbs{
+    z-index: 51;
+    background-color: #05223d;
+    font-size: 24px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Inter', Courier;
+    text-align: center;
+}
+
+/* Social media icons */
+.socialMediaBS{
+    width: 95%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05223d;
+}
+
+.socialMediaBS a{
+    background-color: #05223d;
+    margin: 0px 10px;
+}
+
+.socialMediaBS a i{
+    color: white;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.socialMediaBS a i:hover{
+    transform: scale(1.2);
+    transition-property: transform;
+    transform-origin: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.socialMediaBS a i:active{
+    background-color: #1abc9c;
+}
+
+
+/* code for ourvideos div */
+.ourVideos{
+    background-color: #2c3e50;
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.ourVideos::-webkit-scrollbar{
+    width: 0px;
+    display: none;
+}
+
+/* code for slide bar */
+.slideBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77vw;
+    height: 30vw;
+    background-color: #162635;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 1px solid #020e18;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    background-color: #162635;
+}
+
+.bar img{
+    width: 100%;
+    height: 100%;
+    background-color: #162635;
+}
+
+#image1{
+    display: none;
+    background-color: #162635;
+}
+
+#image2{
+    display: none;
+    background-color: #162635;
+}
+
+#image3{
+    display: none;
+    background-color: #162635;
+}
+
+#image4{
+    display: none;
+    background-color: #162635;
+}
+
+#image5{
+    display: none;
+    background-color: #162635;
+}
+
+/* welcoming in website */
+.welcome{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.welcome p{
+    padding: 8px 20px;
+    border: 1px solid white;
+    font-size: 50px;
+    font-family: 'updock', Courier;
+    color: #1abc9c;
+    font-weight: bold;
+    text-shadow: -3px -3px white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.welcome p:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transform-origin: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+/* code for video div */
+.parentMainVideoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #1abc9c;
+    border-radius: 20px;
+}
+
+.mainVideoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.playVideoanchor{
+    background-color: #162635;
+    width: 20vw;
+    height: 23vw;
+    margin: 40px 10px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 30px;
+    color: #18b4ed;
+    text-decoration: none;
+    font-family: 'Inter', Courier;
+    padding-bottom: 10px;
+}
+
+.playVideoanchor:hover{
+    transform: scaleX(1.1) scaleY(1.2);
+    z-index: 60;
+    transition-property: transform;
+    transform-origin: center;
+    transition-delay: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.palyConstNewHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 20px 20px;
+    width: 100%;
+}
+
+.newHeading{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Inter', Courier;
+    color: rgb(241, 232, 232);
+    background-color: #1abc9c;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.palyConstNewHeading p{
+    padding: 5px 7px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.palyConstNewHeading p a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Inter', Courier;
+    background-color: transparent;
+}
+
+
+/* movie scrolling div */
+
+.scrollingMovieDiv{
+    padding: 0px 0px 25px 0px;
+    margin-top: 10px;
+    width: 100%;
+    /* border-top: 1px solid #1abc9c; */
+    /* border-bottom: 1px solid #1abc9c; */
+    border: 1px solid #1abc9c;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+#scrollm{
+    overflow-x: scroll;
+}
+
+#scrollm::-webkit-scrollbar{
+    width: 1px;
+}
+
+#scrollm::-webkit-scrollbar-track{
+    height: 1px;
+}
+
+#scrollm::-webkit-scrollbar-thumb{
+    height: 1px
+}
+
+
+
+.playVideoanchorscroll{
+    min-width: 15vw;
+    min-height: 20vw;
+    background-color: #162635;
+    width: 20vw;
+    height: 20vw;
+    margin: 40px 10px 10px 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 30px;
+    color: #18b4ed;
+    text-decoration: none;
+    font-family: 'Inter', Courier;
+    padding-bottom: 10px;
+}
+
+.playVideoanchorscroll:hover{
+    transform: scaleX(1.1) scaleY(1.2);
+    z-index: 60;
+    transition-property: transform;
+    transform-origin: center;
+    transition-delay: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.movieHeading{
+    margin: 90px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.movieHeading h5{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    font-family: 'Inter', Courier;
+    color: rgb(241, 232, 232);
+    background-color: #1abc9c;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.movieHeading p{
+    padding: 5px 7px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.movieHeading p a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Inter', Courier;
+    background-color: transparent;
+}
+
+
+
+
+
+/* playconst special background */
+
+#palyconstnewvideo1{
+    background-image: url(images/Pavankhind.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo2{
+    background-image: url(images/WebSeries/mirzapur.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo3{
+    background-image: url(images/movie_image/Beast.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo4{
+    background-image: url(images/TvShows/avard21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo5{
+    background-image: url(images/movie_image/heropanti.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo6{
+    background-image: url(images/movie_image/bachanpande.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo7{
+    background-image: url(images/TvShows/kapilsharmaepisode66.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo8{
+    background-image: url(images/WebSeries/rudra.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo9{
+    background-image: url(images/movie_image/kgf_chapter2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo10{
+    background-image: url(images/movie_image/rrr__.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo11{
+    background-image: url(images/WebSeries/scam1992.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo12{
+    background-image: url(images/WebSeries/moon_knite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo13{
+    background-image: url(images/movie_image/avengerendgame.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo14{
+    background-image: url(images/movie_image/pushpa.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#palyconstnewvideo15{
+    background-image: url(images/WebSeries/flash.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* movies backgroung section */
+
+#movieBG1{
+    background-image: url(images/Pavankhind.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG2{
+    background-image: url(images/movie_image/kgf_chapter2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG3{
+    background-image: url(images/movie_image/heropanti.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG4{
+    background-image: url(images/movie_image/rrr__.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG5{
+    background-image: url(images/movie_image/bachanpande.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG6{
+    background-image: url(images/movie_image/ironman.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG7{
+    background-image: url(images/movie_image/ironman2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG8{
+    background-image: url(images/movie_image/avengerendgame.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG9{
+    background-image: url(images/movie_image/bhisma.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG10{
+    background-image: url(images/movie_image/doctorstrange.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG11{
+    background-image: url(images/movie_image/eternals.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG12{
+    background-image: url(images/movie_image/Beast.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG13{
+    background-image: url(images/movie_image/spidermanhome.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG14{
+    background-image: url(images/movie_image/gaziattack.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG15{
+    background-image: url(images/movie_image/valimai.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG16{
+    background-image: url(images/movie_image/marshal.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG17{
+    background-image: url(images/movie_image/ironman3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#movieBG18{
+    background-image: url(images/movie_image/pushpa.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* TvShows background image section */
+
+#tvshowsBG1{
+    background-image: url(images/TvShows/avard21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvshowsBG2{
+    background-image: url(images/TvShows/kapilsharmaepisode66.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvshowsBG3{
+    background-image: url(images/TvShows/kapilsharmaepisode67.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvshowsBG4{
+    background-image: url(images/TvShows/kapilsharmaepisode68.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvshowsBG5{
+    background-image: url(images/TvShows/award22.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvshowsBG6{
+    background-image: url(images/TvShows/mirchiawaard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* WebSeries background image section */
+#webseriesBG1{
+    background-image: url(images/WebSeries/crushed.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG2{
+    background-image: url(images/WebSeries/halo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* #webseriesBG3{
+    background-image: url(images/WebSeries/heloinfinite.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+#webseriesBG4{
+    background-image: url(images/WebSeries/mirzapur.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG5{
+    background-image: url(images/WebSeries/moneyheist.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG6{
+    background-image: url(images/WebSeries/moneyheistseaason1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG7{
+    background-image: url(images/WebSeries/moneyheistseason3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG8{
+    background-image: url(images/WebSeries/moneyheistseason4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG9{
+    background-image: url(images/WebSeries/rudra.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG10{
+    background-image: url(images/WebSeries/scam1992.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG11{
+    background-image: url(images/WebSeries/squad.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG12{
+    background-image: url(images/WebSeries/familymans.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG13{
+    background-image: url(images/WebSeries/familymans2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG14{
+    background-image: url(images/WebSeries/flash.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG15{
+    background-image: url(images/WebSeries/kotafactory.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG16{
+    background-image: url(images/WebSeries/moneyheistseason2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG17{
+    background-image: url(images/WebSeries/moon_knite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG18{
+    background-image: url(images/WebSeries/Game_of_Thrones_episode1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG19{
+    background-image: url(images/WebSeries/game_of_throns_episode_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG20{
+    background-image: url(images/WebSeries/game_of_throns_episode_3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG21{
+    background-image: url(images/WebSeries/game_of_throns_episode_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG22{
+    background-image: url(images/WebSeries/game_of_throns_episode_5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webseriesBG23{
+    background-image: url(images/WebSeries/game_of_throns_episode_6.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* tv background image section */
+#tvBG1{
+    background-image: url(images/Tv_Images/ndtv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG2{
+    background-image: url(images/Tv_Images/v6news.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG3{
+    background-image: url(images/Tv_Images/cnnNews.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG4{
+    background-image: url(images/Tv_Images/alJazeera.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG5{
+    background-image: url(images/Tv_Images/zeenNews.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG6{
+    background-image: url(images/Tv_Images/dwNews.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG7{
+    background-image: url(images/Tv_Images/republic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG8{
+    background-image: url(images/Tv_Images/nasa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG9{
+    background-image: url(images/Tv_Images/ddNewd.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG10{
+    background-image: url(images/Tv_Images/skyNews.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG11{
+    background-image: url(images/Tv_Images/masti.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG12{
+    background-image: url(images/Tv_Images/tv9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG13{
+    background-image: url(images/Tv_Images/news24.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG14{
+    background-image: url(images/Tv_Images/abpGanga.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tvBG15{
+    background-image: url(images/Tv_Images/newsnation1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* audio tag paly */
+
+#song1{
+    background-image: url(images/songs/duaKaro.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#song2{
+    background-image: url(images/songs/kalank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song3{
+    background-image: url(images/songs/sochNaSake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song4{
+    background-image: url(images/songs/tuHiHaiAshiq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song5{
+    background-image: url(images/songs/hawayein.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song6{
+    background-image: url(images/songs/rabta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song7{
+    background-image: url(images/songs/palPalDilKePass.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song8{
+    background-image: url(images/songs/kabira.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song9{
+    background-image: url(images/songs/alone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song10{
+    background-image: url(images/songs/darkSide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song11{
+    background-image: url(images/songs/dontYouHoldDown.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song12{
+    background-image: url(images/songs/faded.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song13{
+    background-image: url(images/songs/ignite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song14{
+    background-image: url(images/songs/oMyWay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song15{
+    background-image: url(images/songs/singMeToSleep.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song16{
+    background-image: url(images/songs/sorry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song17{
+    background-image: url(images/songs/theDrum.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song18{
+    background-image: url(images/songs/dheeme.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song19{
+    background-image: url(images/songs/oSaki.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song20{
+    background-image: url(images/songs/teriBhabhi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song21{
+    background-image: url(images/songs/coca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song22{
+    background-image: url(images/songs/savanMein.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song23{
+    background-image: url(images/songs/tuHiYar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song24{
+    background-image: url(images/songs/bheegi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#song25{
+    background-image: url(images/songs/dilKoKararAya.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* main tag footer div */
+.mainTagFooterdiv{
+    margin-top: 100px;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #020e18;
+}
+
+.playconstLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: #020e18;
+}
+
+.playconstLogo img{
+    width: 120px;
+    height: 121px;
+    border-radius: 50%;
+    border: 3px solid #1abc9c;
+    background-color: #020e18;
+    margin-bottom: 30px;
+}
+
+.playconstLogo h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+}
+
+.thanks{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background-color: #020e18;
+}
+
+.thanks h1{
+    background-color: #020e18;
+    font-size: 45px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Caveat',cursive;
+}
+
+.developer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #020e18;
+    padding-bottom: 60px;
+}
+
+.devlepe1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #020e18;
+}
+
+.devlepe1 img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: #020e18;
+    border: 2px solid #1abc9c;
+}
+
+.devlepe1 h3{
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+    margin-bottom: 5px;
+}
+
+.devlepe1 p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+    margin-top: 5px;
+}
+
+.devlepe2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #020e18;
+}
+
+.devlepe2 img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: #020e18;
+    border: 2px solid #1abc9c;
+}
+
+.devlepe2 h3{
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+    margin-bottom: 5px;
+}
+
+.devlepe2 p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+    margin-top: 5px;
+}
+
+.devlepe3{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #020e18;
+}
+
+.devlepe3 img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: #020e18;
+    border: 2px solid #1abc9c;
+}
+
+.devlepe3 h3{
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+    margin-bottom: 5px;
+}
+
+.devlepe3 p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter',cursive;
+    background-color: #020e18;
+    margin-top: 5px;
+}
+
+
+/* media query for developer logo */
+
+@media (max-width:650px){
+    .developer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 60%;
+        padding-bottom: 0px;
     }
+
+    .playconstLogo{
+        height: 20%;
+    }
+
+    .thanks{
+        height: 20%;
+    }
+
+    .devlepe1{
+        width: 100%;
+    }
+
+    .devlepe2{
+        width: 100%;
+    }
+
+    .devlepe3{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* media query for main tag */
+
+
+@media (max-width:1320px){
+    .burgerListBigScreen{
+        display: none;
+    }
+
+    .slideBar{
+        width: 97vw;
+        height: 25vh;
+        background-color: #162635;
+        border: 1px solid #020e18;
+    }
+
+    .ourVideos{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .playVideo{
+        width: 30vw;
+        height: 35vw;
+    }
+
+    .heading img{
+        margin-right: 4px;
+    }
+
+    .heading h1{
+        width: 80%;
+    }
+
+    .mainVideoContainer{
+        height: 76vh;
+    }
+
+    .playconstLogo h1{
+        font-size: 25px;
+    }
+
+    .thanks h1{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:420px){
+    .heading img{
+        margin-right: 4px;
+    }
+
+    .heading h1{
+        width: 80%;
+    }
+
+    .playVideo{
+        width: 40vw;
+        height: 55vw;
+    }
+}
+
+@media (max-width:1300px){
+    .slideBar{
+        height: 35vw;
+        background-color: #162635;
+        border: 1px solid #020e18;
+    }
+
+    .playVideoanchor{
+        margin: 40px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Inter', Courier;
+        padding-bottom: 10px;
+    }
+
+    .mainVideoContainer{
+        height: 45vh;
+    }
+
+    .parentMainVideoContainer{
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width:1100px){
+    .mainVideoContainer{
+        height: 50vh;
+    }
+
+    .playVideoanchorscroll{
+        min-width: 184.4px;
+        min-height: 240px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 25px;
+        color: #18b4ed;
+        text-decoration: none;
+        font-family: 'Inter', Courier;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:1000px) {
+    .welcome p{
+        font-size: 500%;
+    }
+
+    .slideBar{
+        height: 60vw;
+        background-color: #162635;
+        border: 1px solid #020e18;
+    }
+
+    .parentMainVideoContainer{
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .mainVideoContainer{
+        height: 152vw;
+        display: grid;
+        grid-template-rows: 20vw 20vw 20vw;
+        grid-template-columns: 10vw 10vw;
+        grid-row-gap: 55vw;
+        grid-column-gap: 40vw;
+        grid-row-start: 1;
+        justify-content: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .playVideoanchor{
+        height: 70vw;
+        width: 48vw;
+        padding: 0px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-radius: 3vw;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Inter', Courier;
+        padding-bottom: 10px;
+
+    }
+
+    #palyconstnewvideo5{
+        display: none;
+    }
+
+    #palyconstnewvideo10{
+        display: none;
+    }
+
+    #palyconstnewvideo15{
+        display: none;
+    }
+
+    .palyConstNewHeading{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+
+    .movieHeading{
+        margin: 40px 0px 40px 20px;
+    }
+
+    .scrollingMovieDiv {
+        padding: 0px 0px 0px 0px;
+        margin-top: 10px;
+        width: 100%;
+        height: 77vw;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .playVideoanchorscroll{
+        min-width: 49.1vw;
+        min-height: 70vw;
+        background-color: #162635;
+        width: 10vw;
+        height: 20vh;
+        margin: 0px 10px 10px 0px;
+        border-radius: 3vw;
+
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .welcome p{
+        font-size: 400%;
+    }
+
+    .slideBar{
+        height: 60vw;
+        background-color: #162635;
+        border: 1px solid #020e18;
+    }
+
+    .parentMainVideoContainer{
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .mainVideoContainer{
+        height: 152vw;
+        display: grid;
+        grid-template-rows: 20vw 20vw 20vw;
+        grid-template-columns: 10vw 10vw;
+        grid-row-gap: 55vw;
+        grid-column-gap: 40vw;
+        grid-row-start: 1;
+        justify-content: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .playVideoanchor{
+        height: 70vw;
+        width: 48vw;
+        padding: 0px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-radius: 3vw;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Inter', Courier;
+        padding-bottom: 10px;
+
+    }
+
+    #palyconstnewvideo5{
+        display: none;
+    }
+
+    #palyconstnewvideo10{
+        display: none;
+    }
+
+    #palyconstnewvideo15{
+        display: none;
+    }
+
+    .palyConstNewHeading{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+
+    .movieHeading{
+        margin: 40px 0px 40px 20px;
+    }
+
+    .scrollingMovieDiv {
+        padding: 0px 0px 0px 0px;
+        margin-top: 10px;
+        width: 100%;
+        height: 77vw;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .playVideoanchorscroll{
+        min-width: 48.9vw;
+        min-height: 70vw;
+        background-color: #162635;
+        width: 10vw;
+        height: 20vh;
+        margin: 0px 10px 10px 0px;
+        border-radius: 3vw;
+
+        font-size: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .welcome p{
+        font-size: 300%;
+    }
+
+    .slideBar{
+        height: 60vw;
+        background-color: #162635;
+        border: 1px solid #020e18;
+    }
+
+    .parentMainVideoContainer{
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .mainVideoContainer{
+        height: 152vw;
+        display: grid;
+        grid-template-rows: 20vw 20vw 20vw;
+        grid-template-columns: 10vw 10vw;
+        grid-row-gap: 55vw;
+        grid-column-gap: 40vw;
+        grid-row-start: 1;
+        justify-content: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .playVideoanchor{
+        height: 70vw;
+        width: 48vw;
+        padding: 0px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-radius: 3vw;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Inter', Courier;
+        padding-bottom: 10px;
+
+    }
+
+    #palyconstnewvideo5{
+        display: none;
+    }
+
+    #palyconstnewvideo10{
+        display: none;
+    }
+
+    #palyconstnewvideo15{
+        display: none;
+    }
+
+    .palyConstNewHeading{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+
+    .movieHeading{
+        margin: 40px 0px 40px 20px;
+    }
+
+    .scrollingMovieDiv {
+        padding: 0px 0px 0px 0px;
+        margin-top: 10px;
+        width: 100%;
+        height: 77vw;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-radius: 0px;
+    }
+
+    .playVideoanchorscroll{
+        min-width: 48.4vw;
+        min-height: 70vw;
+        background-color: #162635;
+        width: 10vw;
+        height: 20vh;
+        margin: 0px 10px 10px 0px;
+        border-radius: 3vw;
+
+        font-size: 14px;
+    } 
+}
+
+@media (max-width:376px) {
+    .welcome p{
+        font-size: 250%;
+    }
+
+    .slideBar{
+        height: 60vw;
+    }
+
+    .parentMainVideoContainer{
+        border: none;
+        padding-bottom: 0px;
+    }
+
+    .mainVideoContainer{
+        height: 152vw;
+        display: grid;
+        grid-template-rows: 20vw 20vw 20vw;
+        grid-template-columns: 9.5vw 9.5vw;
+        grid-row-gap: 55vw;
+        grid-column-gap: 40vw;
+        grid-row-start: 1;
+        justify-content: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .playVideoanchor{
+        height: 70vw;
+        width: 48vw;
+        padding: 0px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-radius: 3vw;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Inter', Courier;
+        padding-bottom: 10px;
+
+    }
+
+    #palyconstnewvideo5{
+        display: none;
+    }
+
+    #palyconstnewvideo10{
+        display: none;
+    }
+
+    #palyconstnewvideo15{
+        display: none;
+    }
+
+    .palyConstNewHeading{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin: 0px;
+        margin-bottom: 60px;
+    }
+
+    .movieHeading{
+        margin: 40px 0px 40px 20px;
+    }
+
+    .scrollingMovieDiv {
+        padding: 0px 0px 0px 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 82vw;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-radius: 0px;
+        margin-bottom: 0px;
+    }
+
+    .playVideoanchorscroll{
+        min-width: 47.7vw;
+        min-height: 70vw;
+        background-color: #162635;
+        width: 10vw;
+        height: 20vh;
+        margin: 0px 10px 10px 0px;
+        border-radius: 3vw;
+
+        font-size: 10px;
+    } 
+}
+
+@media (max-width:325px) {
+    .welcome p{
+        font-size: 200%;
+    }
+
+    .palyConstNewHeading p{
+        margin-right: 3px;
+    }
+}
+
 
     .playVideoanchor{
         height: 70vw;

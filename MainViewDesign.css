@@ -124,6 +124,7 @@ header {
     justify-content: right;
     align-items: center;
     background-color: #05223d;
+    z-index:100;
 }
 
 /* Style for search text */
@@ -494,6 +495,7 @@ footer {
         position: fixed;
         top: 81px;
         width: 100%;
+        z-index:100;
     }
     .customSearch{
         background-color: white;

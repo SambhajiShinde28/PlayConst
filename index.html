@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To PlayConst</title>
+    <link rel="icon" href="images/palyconst1.jpg">
+    <link rel="stylesheet" href="MainViewDesign.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="mainTagDesign.css">
+    <link rel="stylesheet" href="progressBarDesign.css">
+    <link rel="stylesheet" href="searchBoxDesign.css">
+</head>
+
+<body onload="progressBarLoad()">
+    <div class="progressBar" id="progBar">
+
+        <span id="progress1"></span>
+        <span id="progress2"></span>
+        <span id="progress3"></span>
+    </div>
+    <header>
+        <div class="heading">
+            <img src="images/palyconst.jpg" alt="PlayIcon">
+            <h1>PlayConst</h1>
+        </div>
+        <nav class="navigation">
+            <ul class="ullist">
+                <li><a href="index.html" class="home" onclick="homeClick()">HOME</a></li>
+                <li><a href="tvChannelNavigationTab.html" class="home1" onclick="homeClick1()">TV</a></li>
+                <li><a href="movieNavigationTab.html" class="home2" onclick="homeClick2()">MOVIES</a></li>
+                <li><a href="tvShowsNavigationTab.html" class="home3" onclick="homeClick3()">TV SHOWS</a></li>
+                <li><a href="webSeriesNavigationTab.html" class="home4" onclick="homeClick4()">WEB SERIES</a></li>
+                <li><a href="songsNavigationTab.html" class="home5" onclick="homeClick5()">SONGS</a></li>
+            </ul>
+        </nav>
+        <div class="searchBox">
+            <input type="search" placeholder="Search Here.." class="searchText" onclick="stableText()" onkeyup="searchInputList()" id="searchTextId">
+
+            <img src="images/searchIcon.png" alt="SearchIcon" width="35px" height="35px" class="searchImg" onclick="searchIconClicked()">
+        </div>
+        <div class="hamburger">
+            <div class="ham" id="ham1" onclick="burgerClick()">
+                <div id="span1"></div>
+                <div id="span2"></div>
+                <div id="span3"></div>
+            </div>
+            <div class="sicon">
+                <span class="material-symbols-outlined customSearchIcon" onclick="customSearchClicked()">
+                    search
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="burgerList">
+        <ul class="listfooter">
+            <li>
+                <div class="pIcon">
+                    <span class="material-symbols-outlined profile">
+                        account_circle
+                    </span>
+                    <h3 class="profile" id="profileName">ABC</h3>
+                </div>
+            </li>
+            <li><a href="LoginFile.html" onclick="signInClicked()" class="signin">Sign In</a></li>
+            <li><a href="#" onclick="logOutClicked()" class="logOut">LogOut</a></li>
+            <li><a href="responsePage.html">Rate Us</a></li>
+
+            <div class="socialMedia">
+                <a href="http://Twitter.com/Gajanan56327208">
+                    <i class="fa-brands fa-twitter-square"></i>
+                </a>
+                <a href="https://www.instagram.com/sambhaji_26/">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a href="https://www.facebook.com/vaibhav.hiremath.566">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+            
+        </ul>
+    </div>
+
+    <div class="customSearch1">
+        <div class="customSearch">
+            <input type="search" placeholder="Search Here.." id="customText" class="customText1"
+            onclick="customTextClicked()" onkeyup="searchInputList1()">
+
+            <input type="button" value="Search" id="customButton" onclick="searchIconClicked1()">
+        </div>
+    </div>
+
+    <nav class="searchInputList" id="searchInputListId">
+        <ul class="ulsearchInputList">
+            <li class="sList"><a href="movieNo1.html" class="uListAnchor"  id="noMatchList">Pawankhind</a></li>
+            <li class="sList"><a href="movieNo2.html" class="uListAnchor">KGF_Chapter2</a></li>
+            <li class="sList"><a href="movieNo3.html" class="uListAnchor">Heropanti2</a></li>
+            <li class="sList"><a href="movieNo4.html" class="uListAnchor">RRR</a></li>
+            <li class="sList"><a href="movieNo5.html" class="uListAnchor">Bachchhan_Pande</a></li>
+            <li class="sList"><a href="movieNo6.html" class="uListAnchor">IronMan</a></li>
+            <li class="sList"><a href="movieNo7.html" class="uListAnchor">IronMan2</a></li>
+            <li class="sList"><a href="movieNo8.html" class="uListAnchor">Avengers_Endgame</a></li>
+            <li class="sList"><a href="movieNo9.html" class="uListAnchor">Bheeshma</a></li>
+            <li class="sList"><a href="movieNo10.html" class="uListAnchor">Doctor_Strange</a></li>
+            <li class="sList"><a href="movieNo11.html" class="uListAnchor">Eternals</a></li>
+            <li class="sList"><a href="movieNo12.html" class="uListAnchor">Beast</a></li>
+            <li class="sList"><a href="movieNo13.html" class="uListAnchor">Spider_Man_No_Way_To_Home</a></li>
+            <li class="sList"><a href="movieNo14.html" class="uListAnchor">Ghazi_Attack</a></li>
+            <li class="sList"><a href="movieNo15.html" class="uListAnchor">Valamai</a></li>
+            <li class="sList"><a href="movieNo16.html" class="uListAnchor">Marshal</a></li>
+            <li class="sList"><a href="movieNo17.html" class="uListAnchor">IronMan3</a></li>
+            <li class="sList"><a href="movieNo18.html" class="uListAnchor">Pushpa</a></li>
+            <li class="sList"><a href="tvshowsNo1.html" class="uListAnchor">FilmFare_Award2021</a></li>
+            <li class="sList"><a href="tvshowsNo2.html" class="uListAnchor">Kapil_Sharma_Episode67</a></li>
+            <li class="sList"><a href="tvshowsNo3.html" class="uListAnchor">Kapil_Sharma_Episode68</a></li>
+            <li class="sList"><a href="tvshowsNo4.html" class="uListAnchor">Kapil_Sharma_Episode69</a></li>
+            <li class="sList"><a href="tvshowsNo5.html" class="uListAnchor">FilmFare_Award2022</a></li>
+            <li class="sList"><a href="tvshowsNo6.html" class="uListAnchor">Mirchi_Music_Award2022</a></li>
+            <li class="sList"><a href="webSeriesNo1.html" class="uListAnchor">Crushed</a></li>
+            <li class="sList"><a href="webSeriesNo2.html" class="uListAnchor">Halo_NightFall</a></li>
+            <li class="sList"><a href="webSeriesNo4.html" class="uListAnchor">Mirzapur</a></li>
+            <li class="sList"><a href="webSeriesNo5.html" class="uListAnchor">Money_Heist_Season5</a></li>
+            <li class="sList"><a href="webSeriesNo6.html" class="uListAnchor">Money_Heist_Season1</a></li>
+            <li class="sList"><a href="webSeriesNo7.html" class="uListAnchor">Money_Heist_Season3</a></li>
+            <li class="sList"><a href="webSeriesNo8.html" class="uListAnchor">Money_Heist_Season4</a></li>
+            <li class="sList"><a href="webSeriesNo9.html" class="uListAnchor">Rudra_The_Edge_Of_Darkness</a></li>
+            <li class="sList"><a href="webSeriesNo10.html" class="uListAnchor">Scam1992</a></li>
+            <li class="sList"><a href="webSeriesNo11.html" class="uListAnchor">Squid_Game</a></li>
+            <li class="sList"><a href="webSeriesNo12.html" class="uListAnchor">Family_Man_Season1</a></li>
+            <li class="sList"><a href="webSeriesNo13.html" class="uListAnchor">Family_Man_Season2</a></li>
+            <li class="sList"><a href="webSeriesNo14.html" class="uListAnchor">Flash_Season1</a></li>
+            <li class="sList"><a href="webSeriesNo15.html" class="uListAnchor">Kota_Factory</a></li>
+            <li class="sList"><a href="webSeriesNo16.html" class="uListAnchor">Money_Heist_Season2</a></li>
+            <li class="sList"><a href="webSeriesNo17.html" class="uListAnchor">MoonKnite</a></li>
+            <li class="sList"><a href="webSeriesNo18.html" class="uListAnchor">Game_Of_Thrones_Episode1</a></li>
+            <li class="sList"><a href="webSeriesNo19.html" class="uListAnchor">Game_Of_Thrones_Episode2</a></li>
+            <li class="sList"><a href="webSeriesNo20.html" class="uListAnchor">Game_Of_Thrones_Episode3</a></li>
+            <li class="sList"><a href="webSeriesNo21.html" class="uListAnchor">Game_Of_Thrones_Episode4</a></li>
+            <li class="sList"><a href="webSeriesNo22.html" class="uListAnchor">Game_Of_Thrones_Episode5</a></li>
+            <li class="sList"><a href="webSeriesNo23.html" class="uListAnchor">Game_Of_Thrones_Episode6</a></li>
+            <li class="sList"><a href="tvNo1.html" class="uListAnchor">NDTV_India</a></li>
+            <li class="sList"><a href="tvNo2.html" class="uListAnchor">V6_News</a></li>
+            <li class="sList"><a href="tvNo3.html" class="uListAnchor">CNN_News</a></li>
+            <li class="sList"><a href="tvNo4.html" class="uListAnchor">Aljazeera</a></li>
+            <li class="sList"><a href="tvNo5.html" class="uListAnchor">Zee_News</a></li>
+            <li class="sList"><a href="tvNo6.html" class="uListAnchor">DW_English</a></li>
+            <li class="sList"><a href="tvNo7.html" class="uListAnchor">R.Bharat</a></li>
+            <li class="sList"><a href="tvNo8.html" class="uListAnchor">Nasa</a></li>
+            <li class="sList"><a href="tvNo9.html" class="uListAnchor">DD_News</a></li>
+            <li class="sList"><a href="tvNo10.html" class="uListAnchor">Sky_News</a></li>
+            <li class="sList"><a href="tvNo11.html" class="uListAnchor">Mastii</a></li>
+            <li class="sList"><a href="tvNo12.html" class="uListAnchor">Tv9_Marathi</a></li>
+            <li class="sList"><a href="tvNo13.html" class="uListAnchor">News_24_Think_First</a></li>
+            <li class="sList"><a href="tvNo14.html" class="uListAnchor">ABP_Ganga</a></li>
+            <li class="sList"><a href="tvNo15.html" class="uListAnchor">News_Nation</a></li>
+            
+        </ul>
+    </nav>
+    
+
+    <main>
+
+        <div class="container">
+
+            <div class="burgerListBigScreen">
+                <ul class="listfooterOnbs">
+
+                    <li id="profileList">
+                        <div class="pIconOnbs">
+                            <span class="material-symbols-outlined profile">
+                                account_circle
+                            </span>
+                            <h3 class="profileOnbs" id="profileName1">ABC</h3>
+                        </div>
+                    </li>
+
+                    <li><a href="LoginFile.html" onclick="signInOnbsClicked()" class="signinOnbs" id="signInBS">Sign In</a></li>
+                    <li><a href="#" onclick="logOutOnbsClicked()" class="logOutOnbs" id="logOutBS">LogOut</a></li>
+                    <li><a href="responsePage.html" class="logOutOnbs">Rate Us</a></li>
+                    
+                    <div class="socialMediaBS">
+                        <a href="http://Twitter.com/Gajanan56327208" target="_blank">
+                            <i class="fa-brands fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sambhaji_26/">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                        <a href="https://www.facebook.com/vaibhav.hiremath.566">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    
+                </ul>
+            </div>
+
+
+            <div class="ourVideos">
+
+                <div class="slideBar">
+
+                    <div class="slide" id="image1">
+                        <a href="movieNo1.html" class="bar">
+                            <img src="images\pa.jpeg" alt="Pavankhind">
+                        </a>
+                    </div>
+
+                    <div class="slide" id="image2">
+                        <a href="webSeriesNo17.html" class="bar">
+                            <img src="images\moon.jpeg" alt="Moon">
+                        </a>
+                    </div>
+
+                    <div class="slide" id="image4">
+                        <a href="movieNo12.html" class="bar">
+                            <img src="images\ba.jpeg" alt="Beast">
+                        </a>
+                    </div>
+
+                    <div class="slide" id="image5">
+                        <a href="movieNo4.html" class="bar">
+                            <img src="images\RRR1.jpeg" alt="RRR">
+                        </a>
+                    </div> 
+                </div>
+
+                <div class="welcome">
+                    <p>Welcome In PlayConst</p>
+                </div>
+
+                <div class="parentMainVideoContainer">
+                    <div class="palyConstNewHeading">
+                        <h5 class="newHeading"> PlayConst_Special</h5>
+                    </div>
+
+                    <div class="mainVideoContainer">
+                        <a href="movieNo1.html" class="playVideoanchor" id="palyconstnewvideo1">
+                            Pawankhind
+                        </a>
+                
+                        <a href="webSeriesNo4.html" class="playVideoanchor" id="palyconstnewvideo2">
+                            Mirzapur
+                        </a>
+                
+                        <a href="movieNo12.html" class="playVideoanchor" id="palyconstnewvideo3">
+                            Beast  
+                        </a>
+                
+                        <a href="tvshowsNo1.html" class="playVideoanchor" id="palyconstnewvideo4">
+                            FilmFare <br>Award2021 
+                        </a>
+                
+                        <a href="movieNo3.html" class="playVideoanchor" id="palyconstnewvideo5">
+                            Heropanti2
+                        </a>
+                    </div>
+
+                    <div class="mainVideoContainer">
+                        <a href="movieNo5.html" class="playVideoanchor" id="palyconstnewvideo6">
+                            Bachchhan Pande
+                        </a>
+
+                        <a href="tvshowsNo2.html" class="playVideoanchor" id="palyconstnewvideo7">
+                              The Kapil Sharma Ep 67
+                        </a>
+
+                        <a href="webSeriesNo9.html" class="playVideoanchor" id="palyconstnewvideo8">
+                            Rudra The Edge Of Darkness
+                        </a>
+
+                        <a href="movieNo2.html" class="playVideoanchor" id="palyconstnewvideo9">
+                            K.G.F Chapter 2
+                        </a>
+
+                        <a href="movieNo4.html" class="playVideoanchor"  id="palyconstnewvideo10">
+                            RRR
+                        </a>
+                    </div>
+
+                    <div class="mainVideoContainer">
+                        <a href="webSeriesNo10.html" class="playVideoanchor"  id="palyconstnewvideo11">
+                            Scam 1992
+                        </a>
+
+                        <a href="webSeriesNo17.html" class="playVideoanchor"  id="palyconstnewvideo12">
+                            MoonKnite                   
+                        </a>
+
+                        <a href="movieNo8.html" class="playVideoanchor" id="palyconstnewvideo13">
+                            Avengers Endgame
+                        </a>
+
+                        <a href="movieNo18.html" class="playVideoanchor" id="palyconstnewvideo14">
+                            Pushpa The Rise 
+                        </a>
+
+                        <a href="webSeriesNo14.html" class="playVideoanchor" id="palyconstnewvideo15">
+                            The Flash Season1
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="movieHeading">
+                    <h5>Movies</h5>
+                    <p><a href="movieNavigationTab.html">More</a></p>
+                </div>
+                    
+                <div class="scrollingMovieDiv" id="scrollm">
+                    <a href="movieNo1.html" class="playVideoanchorscroll" id="movieBG1">
+                        Pawankhind
+                    </a>
+                
+                    <a href="movieNo2.html" class="playVideoanchorscroll" id="movieBG2">
+                        KGF Chapter2
+                    </a>
+                
+                    <a href="movieNo3.html" class="playVideoanchorscroll" id="movieBG3">
+                        Heropanti2
+                    </a>
+                
+                    <a href="movieNo4.html" class="playVideoanchorscroll" id="movieBG4">
+                        RRR
+                    </a>
+                
+                    <a href="movieNo5.html" class="playVideoanchorscroll" id="movieBG5">
+                        Bachchhan Pande
+                    </a>
+
+                    <a href="movieNo6.html" class="playVideoanchorscroll" id="movieBG6">
+                        Iron Man
+                    </a>
+
+                    <a href="movieNo7.html" class="playVideoanchorscroll" id="movieBG7">
+                        Iron Man 2
+                    </a>
+
+                    <a href="movieNo8.html" class="playVideoanchorscroll" id="movieBG8">
+                        Avengers Endgame
+                    </a>
+
+                    <a href="movieNo9.html" class="playVideoanchorscroll" id="movieBG9">
+                        Bheeshma
+                    </a>
+
+                    <a href="movieNo10.html" class="playVideoanchorscroll" id="movieBG10">
+                        Doctor Strange
+                    </a>
+
+                    <a href="movieNo11.html" class="playVideoanchorscroll" id="movieBG11">
+                        Eternals
+                    </a>
+
+                    <a href="movieNo12.html" class="playVideoanchorscroll" id="movieBG12">
+                        Beast
+                    </a>
+
+                    <a href="movieNo13.html" class="playVideoanchorscroll" id="movieBG13">
+                        Spider Man No Way Home
+                    </a>
+
+                    <a href="movieNo14.html" class="playVideoanchorscroll" id="movieBG14">
+                        Ghazi Attack
+                    </a>
+
+                    <a href="movieNo15.html" class="playVideoanchorscroll" id="movieBG15">
+                        Valamai
+                    </a>
+
+                    <a href="movieNo16.html" class="playVideoanchorscroll" id="movieBG16">
+                        Marshal
+                    </a>
+
+                    <a href="movieNo17.html" class="playVideoanchorscroll" id="movieBG17">
+                        Iron Man 3
+                    </a>
+
+                    <a href="movieNo18.html" class="playVideoanchorscroll" id="movieBG18">
+                        Pushpa
+                    </a>
+
+                </div>
+
+
+                <div class="movieHeading">
+                    <h5>Tv_Shows</h5>
+                    <p><a href="tvShowsNavigationTab.html">More</a></p>
+                </div>
+                    
+                <div class="scrollingMovieDiv" id="scrollm">
+                    <a href="tvshowsNo1.html" class="playVideoanchorscroll" id="tvshowsBG1">
+                       FilmFare Award 2021 
+                    </a>
+                
+                    <a href="tvshowsNo2.html" class="playVideoanchorscroll" id="tvshowsBG2">
+                        The Kapil Sharma S3E66
+                    </a>
+                
+                    <a href="tvshowsNo3.html" class="playVideoanchorscroll" id="tvshowsBG3">
+                        The Kapil Sharma S3E67
+                    </a>
+                
+                    <a href="tvshowsNo4.html" class="playVideoanchorscroll" id="tvshowsBG4">
+                        The Kapil Sharma S3E68
+                    </a>
+
+                    <a href="tvshowsNo5.html" class="playVideoanchorscroll" id="tvshowsBG5">
+                        FilmFare Award 2022
+                    </a>
+
+                    <a href="tvshowsNo6.html" class="playVideoanchorscroll" id="tvshowsBG6">
+                        Mirchi Music Award 2021
+                    </a>
+   
+                </div>
+
+
+                <div class="movieHeading">
+                    <h5>Web_Series</h5>
+                    <p><a href="webSeriesNavigationTab.html">More</a></p>
+                </div>
+                    
+                <div class="scrollingMovieDiv" id="scrollm">
+                    <a href="webSeriesNo1.html" class="playVideoanchorscroll" id="webseriesBG1">
+                        Crushed 
+                    </a>
+                
+                    <a href="webSeriesNo2.html" class="playVideoanchorscroll" id="webseriesBG2">
+                        Halo: NightFall
+                    </a>
+                
+                    <!-- <a href="webSeriesNo3.html" class="playVideoanchorscroll" id="webseriesBG3">
+                
+                    </a> -->
+                
+                    <a href="webSeriesNo4.html" class="playVideoanchorscroll" id="webseriesBG4">
+                        Mirzapur
+                    </a>
+                
+                    <a href="webSeriesNo5.html" class="playVideoanchorscroll" id="webseriesBG5">
+                        Money Heist S5
+                    </a>
+
+                    <a href="webSeriesNo6.html" class="playVideoanchorscroll" id="webseriesBG6">
+                        Money Heist S1E1
+                    </a>
+
+                    <a href="webSeriesNo7.html" class="playVideoanchorscroll" id="webseriesBG7">
+                        Money Heist S3
+                    </a>
+
+                    <a href="webSeriesNo8.html" class="playVideoanchorscroll" id="webseriesBG8">
+                        Money Heist S4
+                    </a>
+
+                    <a href="webSeriesNo9.html" class="playVideoanchorscroll" id="webseriesBG9">
+                        Rudra
+                    </a>
+
+                    <a href="webSeriesNo10.html" class="playVideoanchorscroll" id="webseriesBG10">
+                        Scam 1992
+                    </a>
+
+                    <a href="webSeriesNo11.html" class="playVideoanchorscroll" id="webseriesBG11">
+                        Squid Game
+                    </a>
+
+                    <a href="webSeriesNo12.html" class="playVideoanchorscroll" id="webseriesBG12">
+                        Family Man S1
+                    </a>
+
+                    <a href="webSeriesNo13.html" class="playVideoanchorscroll" id="webseriesBG13">
+                        Family Man S2
+                    </a>
+
+                    <a href="webSeriesNo14.html" class="playVideoanchorscroll" id="webseriesBG14">
+                        The Flash S1
+                    </a>
+
+                    <a href="webSeriesNo15.html" class="playVideoanchorscroll" id="webseriesBG15">
+                        Kota Factory S2
+                    </a>
+
+                    <a href="webSeriesNo16.html" class="playVideoanchorscroll" id="webseriesBG16">
+                        Money Heist S2
+                    </a>
+
+                    <a href="webSeriesNo17.html" class="playVideoanchorscroll" id="webseriesBG17">
+                        MoonKnite
+                    </a>
+
+                    <a href="webSeriesNo18.html" class="playVideoanchorscroll" id="webseriesBG18">
+                       Game Of Thrones S1E1
+                    </a>
+
+                    <a href="webSeriesNo19.html" class="playVideoanchorscroll" id="webseriesBG19">
+                        Game Of Thrones S1E2
+                    </a>
+
+                    <a href="webSeriesNo20.html" class="playVideoanchorscroll" id="webseriesBG20">
+                        Game Of Thrones S1E3
+                    </a>
+
+                    <a href="webSeriesNo21.html" class="playVideoanchorscroll" id="webseriesBG21">
+                        Game Of Thrones S1E4
+                    </a>
+
+                    <a href="webSeriesNo22.html" class="playVideoanchorscroll" id="webseriesBG22">
+                        Game Of Thrones S1E5
+                    </a>
+
+                    <a href="webSeriesNo23.html" class="playVideoanchorscroll" id="webseriesBG23">
+                        Game Of Thrones S1E6
+                    </a>
+                </div>
+
+                <div class="movieHeading">
+                    <h5>Tv_Channel</h5>
+                    <p><a href="tvChannelNavigationTab.html">More</a></p>
+                </div>
+                    
+                <div class="scrollingMovieDiv" id="scrollm">
+                    <a href="tvNo1.html" class="playVideoanchorscroll" id="tvBG1">
+                        NDTV
+                    </a>
+                
+                    <a href="tvNo2.html" class="playVideoanchorscroll" id="tvBG2">
+                        V6 News
+                    </a>
+                
+                    <a href="tvNo3.html" class="playVideoanchorscroll" id="tvBG3">
+                        CNN news
+                    </a>
+                
+                    <a href="tvNo4.html" class="playVideoanchorscroll" id="tvBG4">
+                        Aljazeera
+                    </a>
+                
+                    <a href="tvNo5.html" class="playVideoanchorscroll" id="tvBG5">
+                        Zee News
+                    </a>
+
+                    <a href="tvNo6.html" class="playVideoanchorscroll" id="tvBG6">
+                        DW
+                    </a>
+
+                    <a href="tvNo7.html" class="playVideoanchorscroll" id="tvBG7">
+                        R.Bharat
+                    </a>
+
+                    <a href="tvNo8.html" class="playVideoanchorscroll" id="tvBG8">
+                        NASA
+                    </a>
+
+                    <a href="tvNo9.html" class="playVideoanchorscroll" id="tvBG9">
+                        DD News
+                    </a>
+
+                    <a href="tvNo10.html" class="playVideoanchorscroll" id="tvBG10">
+                        Sky News
+                    </a>
+
+                    <a href="tvNo11.html" class="playVideoanchorscroll" id="tvBG11">
+                        Mastii
+                    </a>
+
+                    <a href="tvNo12.html" class="playVideoanchorscroll" id="tvBG12">
+                        TV9 Marathi
+                    </a>
+
+                    <a href="tvNo13.html" class="playVideoanchorscroll" id="tvBG13">
+                        News 24
+                    </a>
+
+                    <a href="tvNo14.html" class="playVideoanchorscroll" id="tvBG14">
+                        ABP Ganga
+                    </a>
+
+                    <a href="tvNo15.html" class="playVideoanchorscroll" id="tvBG15">
+                        News Nation
+                    </a>
+
+                </div>
+
+
+                <div class="movieHeading">
+                    <h5>Songs</h5>
+                    <p><a href="songsNavigationTab.html">More</a></p>
+                </div>
+                    
+                <div class="scrollingMovieDiv" id="scrollm">
+                    <a href="#song1" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2F04%20-%20Dua%20Karo%20-%20Street%20Dancer%203D%20(2020).mp3?alt=media&token=c18c7822-fd59-41f4-bd05-e9e414e80de1" controls loop id="song1" title="Dua Karo"></audio>
+                    </a>
+                
+                    <a href="#song2" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2F10%20-%20Kalank%20(Duet)%20-%20Kalank%20(2019).mp3?alt=media&token=a03a2b2f-eb67-4a4e-bffb-dcf4cd2e6876" controls loop 
+                        id="song2" title="Kalank"></audio>
+                    </a>
+                
+                    <a href="#song3" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2FAirlift%20-%20Soch%20Na%20Sake%20Version-2.mp3?alt=media&token=0d676131-a186-42e1-a328-44c81b900fb4"controls loop 
+                        id="song3" title="Soch na sake"></audio>
+                    </a>
+                
+                    <a href="#song4" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2FDishkiyaoon%202014%20-%20Tu%20Hi%20Hai%20Aashiqui%20-%20Duet.mp3?alt=media&token=a1ab2710-72e9-4902-a665-ad725c7c3fd7"controls loop 
+                        id="song4" title="Tu hi hai ashique"></audio>
+                    </a>
+                
+                    <a href="#song5" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2FJHMS%202017%20-%20Hawayein%20(Film%20Version).mp3?alt=media&token=bc117a83-fbce-45e4-9ef0-fa8870740f9a"controls loop 
+                        id="song5" title="Hawayeain"></audio>
+                    </a>
+
+                    <a href="#song6" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2FRaabta%20-%20Raabta%20(Title%20Track).mp3?alt=media&token=d2d76080-aea7-4893-8e92-b7675bddcf1d"controls loop 
+                        id="song6" title="Rabta"></audio>
+                    </a>
+
+                    <a href="#song7" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2FWTH%202016%20-%20Dil%20Ke%20Paas%20-%20Indian.mp3?alt=media&token=cecbe89a-1ee9-4ade-bd79-3f4895c609b8"controls loop 
+                        id="song7" title="Dil ke Pass"></audio>
+                    </a>
+
+                    <a href="#song8" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2Farjit%20singh%2FYJHD%202013%20-%20Kabira%20(Encore).mp3?alt=media&token=4e99ffb6-5d5a-49e6-a2b9-b968dfbc5c02" controls loop 
+                        id="song8" title="Kabira"></audio>
+                    </a>
+
+                    <a href="#song9" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FAlone%2C%20Pt.%20II%20-%20Alan%20Walker%20n%20Ava%20Max-%20%5BPagalWorld.NL%5D.mp3?alt=media&token=d261b84b-912d-4066-a72c-5176204086b6" controls loop id="song9" title="alone"></audio>
+                    </a>
+
+                    <a href="#song10" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FDarkside%20-%20Alan%20Walker-%20%5BMyMp3Bhojpuri.In%5D.mp3?alt=media&token=42d76bc3-d6ad-4b30-b531-663d8270fd60"controls loop id="song10" title="DarkSide"></audio>
+                    </a>
+
+                    <a href="#song11" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FDon%E2%80%99t%20You%20Hold%20Me%20Down%20-%20Alan%20Walker%2C%20Georgia%20Ku-%20%5BMyMp3Bhojpuri.In%5D.mp3?alt=media&token=d552792e-6dba-4620-813f-72c420bfcf97"controls loop id="song11" title="Dont you hold me down"></audio>
+                    </a>
+
+                    <a href="#song12" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FFaded%20-%20Alan%20Walker-%20%5BMyMp3Bhojpuri.In%5D.mp3?alt=media&token=76783ad0-bacf-4988-bb71-378427ef9744"controls loop id="song12" title="fade"></audio>
+                    </a>
+
+                    <a href="#song13" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FIgnite%20-%20Alan%20Walker-%20%5BPagalWorld.NL%5D.mp3?alt=media&token=7e1d725c-4fd0-4c94-a932-2cf63f89cc66"controls loop id="song13" title="ignite"></audio>
+                    </a>
+
+                    <a href="#song14" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FOn%20My%20Way%20-%20Alan%20Walker%2C%20Sabrina%20Carpenter%2C%20Farruko-%20%5BMyMp3Bhojpuri.In%5D.mp3?alt=media&token=9685e7c0-d9a3-4fc8-bd82-8b7009479aef" controls loop id="song14" title="On my way"></audio>
+                    </a>
+
+                    <a href="#song15" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FSing%20Me%20To%20Sleep%20-%20Alan%20Walker-%20%5BPagalWorld.NL%5D.mp3?alt=media&token=0dad3890-7ebf-4f3b-93c6-000112a69bed"controls loop id="song15" title="sing me to sleep"></audio>
+                    </a>
+
+                    <a href="#song16" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FSorry%20-%20Alan%20Walker-%20%5BMyMp3Bhojpuri.In%5D.mp3?alt=media&token=76bdbc37-f23b-442d-929e-ff4124d4534a"controls loop id="song16" title="sorry"></audio>       
+                    </a>
+
+                    <a href="#song17" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FAlan%20Walker%2FThe%20Drum%20-%20Alan%20Walker-%20%5BPagalWorld.NL%5D.mp3?alt=media&token=4fe3c1d8-2069-41e1-bba5-89326823ec7a" controls loop id="song17" title="The drum"></audio>       
+                    </a>
+
+                    <a href="#song18" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2F01%20-%20Dheeme%20Dheeme%20-%20Pati%20Patni%20Aur%20Woh%20(2019).mp3?alt=media&token=0c2bc4a7-bd55-406a-bedb-f23576b82916" controls loop id="song18" title="Dheeme Dheeme"></audio>
+                    </a>
+
+                    <a href="#song19" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2F01%20-%20O%20Saki%20Saki%20-%20Batla%20House%20(2019).mp3?alt=media&token=1129d1cb-0e6d-4a9e-b778-a23129ac3f71" controls loop id="song19" title="o saki saki"></audio>
+                    </a>
+
+                    <a href="#song20" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2F01%20-%20Teri%20Bhabhi%20-%20Coolie%20No.%201%20(2020).mp3?alt=media&token=9c5d32a1-d8e9-4b88-86ce-590af9d4b830" controls loop id="song20" title="Teri Bhabhi"></audio>
+                    </a>
+
+                    <a href="#song21" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2F02%20-%20Coca%20Cola%20-%20PagalSongs.com.mp3?alt=media&token=ae1dceed-403c-4f86-ba9b-d9880ee00cf3" controls loop id="song21" title="Coca Cola"></audio>                        
+                    </a>
+                    <a href="#song22" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2F02%20-%20Sawan%20Mein%20Lag%20Gayi%20Aag%20-%20Ginny%20Weds%20Sunny(2020).mp3?alt=media&token=f236b0d5-123f-4990-b0e8-a111dedf1dff" controls loop id="song22" title="Sawan main lagg gayi aag"></audio>              
+                    </a>
+
+                    <a href="#song23" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2F04%20-%20Tu%20Hi%20Yaar%20Mera%20-%20Pati%20Patni%20Aur%20Woh%20(2019).mp3?alt=media&token=2ab984fd-d1a3-4837-9b00-0aa00bb41e1d"controls loop id="song23" title="tu hi yaar mera"></audio>                        
+                    </a>
+
+                    <a href="#song24" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2FBheegi%20Bheegi%20-%20Neha%20Kakkar.mp3?alt=media&token=c06e5642-f1a2-4b5d-a357-82df523dcc21"controls loop id="song24" title="Bheegi Bheegi"></audio>                      
+                    </a>
+
+                    <a href="#song25" class="playVideoanchorscroll">
+                        <audio src="https://firebasestorage.googleapis.com/v0/b/playconst-8b80a.appspot.com/o/songs%2FNeha%20Kakkar%2FDil%20Ko%20Karaar%20Aaya%20-%20Neha%20Kakkar.mp3?alt=media&token=89c07241-6065-4661-8971-e4449d4fd008"controls loop id="song25" title="Dil ko Karrar Aya"></audio>                        
+                    </a>
+                    
+                </div>
+                    
+                
+
+
+                <div class="mainTagFooterdiv">
+                    <div class="playconstLogo">
+                        <img src="images/palyconst.jpg" alt="PlayIcon" class="footerLogo">
+                        <h1 class="footerLogoHeading">PlayConst</h1>
+                    </div>
+                    <div class="developer">
+                        <div class="devlepe1">
+                            <h3>Model Designer</h3>
+                            <img src="images/Website_Developer/vaibhav.jpg" alt="Vaibhav_Img">
+                            <p>Vaibhav Hiremath</p>
+                        </div>
+                        <div class="devlepe2">
+                            <h3>Developer</h3>
+                            <img src="images/Website_Developer/sam1.jpeg" alt="Sambhaji_Img">
+                            <p>Sambhaji Shinde</p>
+                        </div>
+                        <div class="devlepe3">
+                            <h3>Bug Finder</h3>
+                            <img src="images/Website_Developer/gaju.jpeg" alt="Gajanan_Img">
+                            <p>Gajanan Shinde</p>
+                        </div>
+                    </div>
+                    <div class="thanks">
+                        <h1 class="thanking">Thanks You For Visiting</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <ul class="fulList">
+            <li>
+                <a href="index.html" onclick="homeClicked()">
+                    <div class="icon"><span class="material-symbols-outlined" id="homeIcon">
+                            home
+                        </span>
+                    </div>
+                    <div class="homename name" id="homeName">HOME</div>
+                </a>
+            </li>
+            <li>
+                <a href="tvChannelNavigationTab.html" onclick="tvClicked()">
+                    <div class="icon"><span class="material-symbols-outlined" id="tvIcon">
+                            desktop_windows
+                        </span></div>
+                    <div class="tvname name" id="tvName">TV</div>
+                </a>
+            </li>
+            <li>
+                <a href="movieNavigationTab.html" onclick="movieClicked()">
+                    <div class="icon"><span class="material-symbols-outlined movieicon" id="movieIcon">
+                            movie
+                        </span></div>
+                    <div class="moviename name" id="movieName">MOVIES</div>
+                </a>
+            </li>
+            <li>
+                <a href="tvShowsNavigationTab.html" onclick="showClicked()">
+                    <div class="icon"><span class="material-symbols-outlined showicon" id="showIcon">
+                            preview
+                        </span></div>
+                    <div class="showname name" id="showName">SHOWS</div>
+                </a>
+            </li>
+            <li>
+                <a href="webSeriesNavigationTab.html" onclick="seriesClicked()">
+                    <div class="icon"><span class="material-symbols-outlined seriesicon" id="seriesIcon">
+                            theaters
+                        </span></div>
+                    <div class="seriesname name" id="seriesName">SERIES</div>
+                </a>
+            </li>
+            <li>
+                <a href="songsNavigationTab.html" onclick="songClicked()">
+                    <div class="icon"><span class="material-symbols-outlined songicon" id="songIcon">
+                            library_music
+                        </span></div>
+                    <div class="songname name" id="songName">SONGS</div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        var a=localStorage.getItem('Name');
+        document.getElementById('profileName').innerText=' '+a;
+        document.getElementById('profileName1').innerText=' '+a;
+    </script>
+    <script src="MainViewScript.js"></script>
+    <script src="mainTagScript.js"></script>
+    <script src="loginFileScript.js"></script>
+    <script src="searchBoxScript.js"></script>
+</body>
+
+</html>

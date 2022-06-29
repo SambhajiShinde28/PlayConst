@@ -186,7 +186,7 @@
         })
 
         document.getElementById("sendButton").addEventListener('click',function writeUserData6() {
-            set(ref(db, 'Response_Database/'+name+'/'+email+'_'+mobile), {
+            set(ref(db, 'Response_Database/'+name+'/'+name+'_'+mobile), {
                 rating: count
             });
         })

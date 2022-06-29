@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="LogiFileDesign.css">
+</head>
+
+<body>
+    <div class="login">
+    <form method="post" autocomplete="off">
+        <table>
+
+            <tr>
+                <h1 class="sign">SignIn Page</h1>
+            </tr>
+
+            <tr>
+                <td>
+                    <label class="lab">Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name" placeholder="Name" class="textBox" required id="uName">
+                </td>
+
+            </tr>
+            
+            <tr>
+                <td>
+                    <label class="lab">Email</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Email" name="email" class="textBox" required id="uEmail">
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    <label class="lab">Mobile No</label>
+                </td>
+                <td>
+                    <input type="number" placeholder="Mob No" name="num" class="textBox" required id="uMobile">
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    <a href="index.html"><input type="button" value="Submit" name="submit" class="sub" onclick="submitClicked()" id="loginSubmit"></a>
+                    <input type="reset" value="Reset" name="reset" class="sub">
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+    </div>
+    
+    <script src="loginFileScript.js"></script>
+
+</body>
+
+</html>

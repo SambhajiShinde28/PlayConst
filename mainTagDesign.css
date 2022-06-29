@@ -1443,7 +1443,7 @@ main{
         color: white;
         text-decoration: none;
         font-family: 'Inter', Courier;
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
     }
 
     /* .mainVideoContainer{
@@ -1482,7 +1482,7 @@ main{
         color: rgb(236, 229, 229);
         text-decoration: none;
         font-family: 'Inter', Courier;
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
     }
 }
 

@@ -34,6 +34,7 @@ body{
     text-align: center;
     color:#3c5367;
     font-family: 'Inter', Courier;
+    cursor: pointer;
 
     animation-name: sam;
     animation-timing-function: ease-in-out;

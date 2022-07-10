@@ -1151,7 +1151,7 @@ main{
 
     animation-name: samRoundAnimation;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
@@ -1163,7 +1163,7 @@ main{
 
         transition-property: transform;
         transform-origin: center;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
     }
 }
@@ -1178,7 +1178,7 @@ main{
 
     animation-name: samRound;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
 
@@ -1190,7 +1190,7 @@ main{
 
         transition-property: transform;
         transform-origin: center;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
     }
 }
